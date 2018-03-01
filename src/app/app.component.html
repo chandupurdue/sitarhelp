@@ -1,4 +1,17 @@
-SITAR CHANDRA
+<input type="text" class="input-class" [(ngModel)]="nameText">
+{{nameText}}
 
-Poojitha is sister for SITAR
-sandeep is also a brother
+<button (click)="findName()">Click me</button>
+
+<table id="customers">
+    <tr>
+        <th>Company</th>
+        <th>Contact</th>
+        <th>Country</th>
+    </tr>
+    <tr *ngFor="let value of object">
+        <th>{{value.name}}</th>
+        <th>{{value.contact}}</th>
+        <th>{{value.Country}}</th>
+    </tr>
+</table>
